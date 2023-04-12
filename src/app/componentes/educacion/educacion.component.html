@@ -1,0 +1,117 @@
+<div class="estudios bordes estilos">
+  <h1 style="margin-left: 5px">Educacion Academica</h1>
+  <div class="contenedorAgregarEducacion estiloContenedor">
+    <button title="botonPlus" class="boton">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-plus"
+      >
+        <line x1="12" y1="5" x2="12" y2="19"></line>
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+      </svg>
+    </button>
+  </div>
+  <ul class="lista-educacion">
+    <li *ngFor="let educacion of educacionList">
+      <div class="Educacion" id="borrar-educacion">
+        <div class="contenedorBotonesEducacion estiloContenedor">
+          <button
+            title="editar"
+            class="boton"
+            onclick="cambiar_parrafo(['edit-tituloEducacion', 'edit-descripcionEducacion', 'edit-periodoEducacion'], ['texto-tituloEducacion', 'texto-descripcionEducacion', 'texto-periodoEducacion'])"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-edit"
+            >
+              <path
+                d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+              ></path>
+              <path
+                d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+              ></path>
+            </svg>
+          </button>
+          <button
+            title="eliminar"
+            class="boton boton"
+            onclick="borrar_parrafo('borrar-educacion')"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-x"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="textoEducacion">
+          <h5 id="texto-tituloEducacion" style="margin-left: 5px">
+            {{ educacion.instituto }}
+          </h5>
+          <img
+          id="logoEducacion"
+          class="{{ educacion.logo ? '' : 'no-image' }}"
+          [src]="educacion.logo"
+          alt="Logo Sé Programar"
+        />
+          <div>
+            <input
+              id="edit-tituloEducacion"
+              type="text"
+              oninput="myFunction(this.value, 'texto-tituloEducacion')"
+              style="display: none"
+            />
+          </div>
+          <h6 id="texto-descripcionEducacion " style="margin-left: 80px">
+            {{ educacion.titulo }}
+          </h6>
+          <div>
+            <input
+              id="edit-descripcionEducacion"
+              type="text"
+              oninput="myFunction(this.value, 'texto-descripcionEducacion1')"
+              style="display: none"
+            />
+          </div>
+          <p id="texto-periodoEducacion" style="margin-left: 80px">
+            {{ educacion.periodo }}
+          </p>
+          <div>
+            <input
+              id="edit-periodoEducacion"
+              type="text"
+              oninput="myFunction(this.value, 'texto-periodoEducacion')"
+              style="display: none"
+            />
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

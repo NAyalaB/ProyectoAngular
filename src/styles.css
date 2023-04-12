@@ -1,1 +1,337 @@
-/* You can add global styles to this file, and also import other style files */
+.contenedor{
+    display:flex;
+    width: 97%;
+    height: 50px;
+    background-color: #00358e;
+    justify-content: space-between;
+}
+.banner{
+    width: 97%  !important;
+}
+.estiloContenedor{
+    width: 5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    left: 89%;
+    top: 3px;
+    position: absolute;
+}
+.contenedorBotonesAcercaDe{
+    left: 89%;
+    top: -32px;
+    position: absolute;
+}
+.contenedorAgregarExperiencia{
+    position: absolute;
+    left: 93%;
+    top: 9px;
+}
+.contenedorAgregarEducacion{
+    position: absolute;
+    left: 93%;
+    top: 9px;
+}
+.contenedorAgregarProyectos{
+    position: absolute;
+    left: 93%;
+    top: 9px;
+}
+.contenedorBotonesEmpresa{
+    left: 89%;
+    top: 26px;
+    position: absolute;
+}
+
+
+.contenedorBotonesEducacion{
+    left: 89%;
+    top: 35px;
+    position: absolute;
+}
+.contenedorBotonesInstituto{
+    left: 89%;
+    top: 7px;
+    position: absolute;
+}
+.contenedorBotonesPortfolio{
+    left: 89%;
+    top: 51px;
+    position: absolute;
+}
+.boton {
+
+    width: 2rem;
+    height: 2rem;
+    border:none;
+    border-radius: 50%;
+    background-color: #06d6a0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.positionBotonFoto{
+    position: absolute;
+    left: 57px;
+    top: 55px;
+}
+
+.positionBotonBanner{
+    position:absolute;
+    left: 93%;
+    top:5px;
+}
+
+
+.boton:hover{
+    background-color: #34a0a4;
+}
+
+.logos{
+    display: flex;
+   align-items: center;
+   margin-left: 8px;
+}
+.textoLogos{
+    color: white;
+    margin-left: 4px;
+}
+
+.textoLogos h6{
+    font-size: 13px !important;
+    margin-bottom: 0px;
+}
+.redesSociales a img{
+    display: flex;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+.redesSociales {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    
+}
+.banner{
+    width: 100%;
+    height: 300px;
+   position: relative; 
+    
+}
+.foto-banner {
+    width: 100%;
+    height: 60%;
+     
+}
+#fotoMar{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2%;
+}
+
+.presentacion{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 79px;
+    right: -15px;
+   
+}
+#fotoPerfil{
+border-radius: 50%;
+border: 5px solid #00358e;
+
+}
+.bordes{
+    border: 2px groove #EAF2F8;
+}
+.estilos{
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 5px;
+    padding-bottom: 10px;
+  
+}
+.presentacion h1{ 
+    font-weight: 600 !important; 
+    font-size: 30px !important;
+    margin-bottom: 0px;
+    }
+.presentacion p{
+    color: #8b0000;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.acerca_de{
+    position: relative;
+}
+.acercaDe{
+    position: relative;
+   
+    
+}
+ .acerca_de p{
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 15px;
+ }
+ ul{
+    list-style: none;
+ }
+ 
+.experiencia{
+    justify-content: space-around;
+    position: relative;
+}
+.empresa{
+    position: relative;
+    margin-top: 25px;
+}
+#logoEmpresa{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+
+   
+.no-image {
+    display: none;
+}
+
+.municipalidad{
+    position: relative;
+}
+
+.callCenter{
+    position: relative;
+}
+.estudios{
+    position: relative;
+}
+#logoEducacion{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+  
+}
+.instituto{
+    position: relative;
+}
+.educacion{
+    position: relative;
+}
+.proyectos{
+    position: relative;
+}
+h1{
+    color: #3300ff;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 25px !important;
+    margin-left: 15px !important;
+}
+.progresos{
+    display: flex;
+    justify-content: center;
+    margin-block-start: 25px;
+  
+}
+.circular-progress{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: auto;
+    background: linear-gradient(
+        0deg,
+        #003399 50%,
+        #0066ff 50%
+);
+position: relative;
+}
+.excel {
+transform: rotate(120deg);
+}
+
+.administrativa {
+transform: rotate(140deg);
+}
+.equipo {
+transform: rotate(160deg);
+}
+
+.circular-progress.excel::before{
+        content: "Excel";
+        transform: rotate(-120deg);
+}
+.circular-progress.excel::after{
+        content: "60%";
+        transform: scale(1.1) rotate(-120deg);
+    
+}
+
+
+.circular-progress.administrativa::before{
+        content: "Asist. Administ.";
+        transform: rotate(-140deg);
+}
+
+.circular-progress.administrativa::after{
+    content: "70%";
+    transform: scale(1.1) rotate(-140deg);
+}
+
+
+.circular-progress.equipo::before{
+        content: "Trabajo en Equipo";
+       
+        transform: rotate(-160deg);
+}
+.circular-progress.equipo::after{
+    content: "90%";
+    transform: scale(1.1) rotate(-160deg);
+}
+.circular-progress::before{
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+     top:0;
+    left: 0;
+    background: white content-box;
+    border-radius: 50%;
+    padding: .5em;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color:#8b0000;
+    text-align: center;
+    line-height: 6rem;
+}
+.circular-progress::after{
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    
+    top:0;
+    left: 0;
+    border-radius: 50%;
+    background: linear-gradient(
+        transparent 50%,
+        white 50%
+    );
+    text-align: center;
+    color: #8b0000;
+    line-height: 11rem;
+}
+#fotoProyecto{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: -134px;
+    left: 4px;
+}
+

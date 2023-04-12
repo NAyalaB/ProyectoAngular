@@ -1,0 +1,53 @@
+{
+  "nombre": "Noelia Ayala",
+  "posicion": "Full Stack Developer Jr",
+  "descripcion": "Soy una persona proactiva, organizada con enfoque a los objetivos planteados. Con buenas relaciones interpersonales. En busca de seguir perfeccionándome en programación.",
+  "linkRedes":"https://www.linkedin.com/in/noelia-ayala-ab77803a/",
+  "fotoBanner": "./assets/imagenes/foto-banner.jpg",
+  "fotoPerfil": "./assets/imagenes/foto-perfil",
+  "logoPrograma": "./assets/imagenes/logo.png",
+  "iconoLinkedin":"./assets/imagenes/icono-Linkedin.jpeg",
+  "experiencia": [{
+      "cargo": "Coordinadora de recepción e ingresos de la División de la Mesa de entradas y salidas",
+      "empresa": "Ente Nacional Regulador de la Electricidad",
+      "periodo": "ene. 2014 - actualidad 4 - Ciudad Autónoma de Buenos Aires",
+      "descripcion": "Recepción e ingreso de documentación en el sitema de Gestión Documental Electronica (GDE) . Tramitación de expedientes. Despacho de documentación.",
+      "logo": "./assets/imagenes/logoEnre.png"
+    },
+    {
+      "cargo": "Administrativa",
+      "empresa": "Municipalidad de Quilmes",
+      "periodo": "mar. 2011 - dic. 2011 - Quilmes",
+      "Administrativa": "Sector: Administración, legal y técnica: Armado y gestión de Base de datos, control y corrección de encuestas, Análisis e Informes de Áreas geográficas",
+      "logo": "./assets/imagenes/logoMunicipio.jpg"
+    },
+    {
+      "cargo": "Administrativa",
+      "empresa": "Call Center Buenos Aires S.A",
+      "periodo": "may. 2008 - feb. 2011 · Ciudad Autónoma de Buenos Aires",
+      "descripcion": "Sector: administración (confección de reportes estadísticos), calculo de las comisiones de los vendedores. Sector: Auditoria (escuchas internas, capacitación a auditores sobre productos)",
+      "logo":null 
+      }],
+
+      "educacion": [{
+      "instituto": "Argentina Programa",
+      "titulo": "Sé Programar",
+      "periodo": "jun. 2022",
+      "logo":"./assets/imagenes/logoSeProgramar.jpg"
+    },
+    {
+      "instituto": "Instituto San Cosme y San Damián",
+      "titulo": "Bachillerato con orientación en informatica",
+      "periodo": "dic. 2005",
+      "logo":null
+    }],
+
+  "proyecto": [{
+     "titulo": "Portfolio Web Full Stack",
+    "institucion": "#YoProgramo",
+    "fecha": "may. 2023",
+    "descripcion": "Desarrollo de una aplicación web Full Stack, primer Portfolio Web",
+    "link":"https://github.com/NAyalaB/PortfolioFrontend",
+    "fotoProyectoPortfolioWeb": "./assets/imagenes/ProyectoPortfolioWeb.png"
+  }]
+}

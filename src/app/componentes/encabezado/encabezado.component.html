@@ -1,0 +1,95 @@
+<div class="contenedor estilos" >
+    <div class="logos">
+      <img
+        [src]="miPortfolio.logoPrograma" alt="Logo Argentina Programa"
+            alt="Logo Argentina Programa"
+        width="45px"
+        height="35px"
+      />
+      <div class="textoLogos">
+        <h6>Argentina Programa</h6>
+        <h6>#YoProgramo</h6>
+      </div>
+    </div>
+    <div class="redesSociales">
+      <a
+        href="https://www.linkedin.com/in/noelia-ayala-ab77803a/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          [src]="miPortfolio.iconoLinkedin"
+          alt="Icono Acceso linkedin"
+          width="35px"
+          height="35px"
+      /></a>
+
+      <button type="button" class="btn btn-outline-light btn-sm">
+        Iniciar Sesión
+      </button>
+    </div>
+  </div>
+  <div class="banner bordes estilos">
+    <button class="boton positionBotonBanner">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-edit"
+      >
+        <path
+          d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+        ></path>
+        <path
+          d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+        ></path>
+      </svg>
+    </button>
+    <div class="foto-banner">
+      <img
+        id="fotoMar"
+        [src]="miPortfolio.fotoBanner" alt="Foto de mar y horizonte"
+        alt="Imagen mar y horizonte"
+      />
+    </div>
+
+    <div class="presentacion">
+      <img
+        id="fotoPerfil"
+        [src]="miPortfolio.fotoPerfil" alt="Imagen perfil"
+        alt="Foto Perfil"
+        width="145px"
+        height="145px"
+      />
+      <button class="boton positionBotonFoto">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-edit"
+        >
+          <path
+            d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+          ></path>
+          <path
+            d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+          ></path>
+        </svg>
+      </button>
+
+      <h1>{{miPortfolio.nombre}}</h1>
+      <p>{{miPortfolio.posicion}}</p>
+    </div>
+  </div>
